@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;padding: 0;
+    font-size: 16px; color: #000; line-height: 1.5;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+header h1 a{
+    display: block;
+    width: 164px;
+    height: 100px;        
+    background: url(../images/logo_type2.png) 50% no-repeat;
+    text-indent: -9999px;
+}
+.nav-depth1{
+    display: flex;
+}
+
+.nav-depth1 >li > a{
+    height: 100px;
+    display: block;
+    padding: 40px 40px 0;
+}
+.nav-depth1 >li:hover > a{
+    border-bottom: 2px solid #000;
+}
+.nav-depth1 li:hover .nav-depth2{
+    max-height: 150px;
+}
+.nav-depth2{
+    position: relative; z-index: 100;
+    background: #fff;
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height .5s;  
+}
+.nav-depth2 a{
+    display: block;
+    padding: 3px 0;
+    text-align: center;    
+}
+.nav-depth2 a:hover{
+    background: #000000;
+    color: #fff;
+}
+
+.slide{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    background: lightgray;
+}
+.slide ul {
+    display: flex;
+    position: absolute;top: 0;left: 0;
+}
+/* 이미지가 사이즈에 맞지않을경우 , 오브젝트 핏으로 사이즈에 맞춰 잘라준다 */
+/* .slide img{
+    width: 1200px;height: 300px;
+    object-fit: cover;
+    object-position: center;
+} */
+.containner{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding: 20px 0;
+}
+.containner > section, .tap{
+    width: 30%;
+}
+
+
+
+.tap {        
+    position: relative;
+    display: flex;    
+}
+.tap section{
+    height: 35px;
+}
+.tap h2{
+    width: 130px;
+    height: 35px;
+    background: lightgray;
+    text-align: center; line-height: 35px;
+    cursor: pointer;
+}
+.tap .cont .lst-gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.lst-gallery > li{
+    width: 30%;
+}
+.tap .on .cont{
+    display: block;
+}
+.tap .on h2{
+    background: #000;
+    color: #fff;    
+}
+.tap section .cont{    
+    display: none;
+    position: absolute; top: 40px;left: 0;        
+    width: 100%;
+}
+.tap .cont img{
+    width: 100%;
+}
+.lst-bbs a{
+    display: block;
+    padding: 3px 0;
+    font-size: 14px;
+}
+.lst-bbs span{
+    float: right;
+    font-size: 10px;
+    font-family: verdana;
+    color: gray;
+}
+
+/* 시험은 오브젝트 사용 불가 -ie에서 않먹음*/
+.lst-gallery img{ 
+    width:100% ;height : 190px;
+    object-fit: cover;
+    object-position: center;
+}
+.col2 h2, .col3 h2{
+    text-indent: -9999px;
+    font-size: 0;line-height: 0;
+    overflow: hidden;
+}
+.col2 .cont { 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.col3 .cont{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.col3 a{
+    display: block;
+    width: 49%;     height: 49%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+}
+.col3 img{
+    display: block;
+    margin: 25px auto 10px;
+}
+
+
+footer{
+    background: lightgray;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0;
+}
+.sns a{
+    padding: 8px;
+}
+
+/* id값을 잡을땐 #으로  */
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed; top: 0;left: 0;right: 0 ;bottom: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+#modal .inner {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #fff;    
+}
+
+#modal img{
+    display: block;
+}
+#modal button{
+    position: absolute; top: -30px;right: -30px;
+    width: 70px;height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    border: none ;
+    cursor: pointer;
+}
