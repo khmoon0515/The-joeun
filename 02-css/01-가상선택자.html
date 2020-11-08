@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 : css</title>
+    <style>
+        *{
+            margin: 0;padding: 10px;
+            text-decoration: none;
+            list-style: none;
+            color: black;            
+        }
+    </style>
+</head>
+<body>
+    <h1>가상선택자</h1>
+
+    <h2>가상선택자 - 순서</h2>
+    <style>
+        .lst1 li{
+            margin-bottom: 10px;
+            background: lightgray;
+        }
+        /* 목록의 첫번째 아이 */
+        .lst1 li:first-child{
+            border: 1px solid tomato;            
+        }
+        /* 목록의 마지막 아이 */
+        .lst1 li:last-child{
+            border: 1px solid blue;
+        }
+        /* 목록의 두번째 */
+        .lst1 li:nth-child(2){
+            border: 1px solid greenyellow;
+        }
+        .lst1 li:nth-child(3){
+            border: 1px solid yellow;
+        }
+    </style>
+    <ul>
+        <ul class="lst1">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        
+    </ul>
+    <br>
+
+    <h2>가상 엘리먼트 선택자</h2>
+    <!-- 공지사항 코딩  -->
+    <style>
+        /* 목록 앞에 비어있는공간에 디자인을 삽입할때 */
+        .lst2 a::before{
+            content: '';
+            display: inline-block;
+            width: 5px;height: 5px;
+            background: red;
+            /* 세로정렬을 가운데로 한다음 마진을 사용*/
+            vertical-align: middle;
+            margin: -2px 10px 0 0;
+            border-radius: 50%;
+        }
+        .lst2 a::after{
+            content: 'after';
+        }
+    </style>
+    <ul class="lst2">
+        <li><a href="#">공지사항 내용글</a></li>
+        <li><a href="#">공지사항 내용글</a></li>
+        <li><a href="#">공지사항 내용글</a></li>
+    </ul>
+    
+    <style>
+         .lst3 {
+            display: flex;
+         }
+         .lst3 a::before{
+        display: inline-block;
+        content: '';
+         width: 3px;height: 15px;
+        margin-right: 15px;
+        vertical-align: middle;
+        background: #000;
+        }
+        .lst3 li:first-child a::before{
+            display: none;
+        }     
+
+    </style>
+    <ul class="lst3">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Community</a></li>
+        </ul>
+
+        
+     <style>
+         .lst4{
+             display: flex;
+         }
+         .lst4 li::after{
+            display: inline-block;
+            content: '';
+            width: 3px;height: 15px;
+            margin-left: 15px;
+            vertical-align: middle;
+            background: #000;
+         }
+         .lst4 li:last-child::after{
+             display: none;
+         }
+     </style>
+    <ul class="lst4">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Community</a></li>
+        </ul>
+
+        <h2>링크 가상선택자</h2>
+        
+        
+        <a href="#" class="link-g">링크 가상선택자</a>
+    
+</body>
+</html>

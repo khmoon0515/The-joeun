@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>ANIMATION</title> 
+</head> 
+<body>
+    <p>
+        Animation..
+    </p>
+    <style>
+        p{
+            position:absolute; top: 0;left: 0;
+            width: 200px; height: 100px;
+            background: tomato;
+            color: papayawhip ;
+            text-align: center;
+            line-height: 100px;
+            animation-name: ani;
+            animation-duration: 4s;
+            /* 마지막색깔로 유지하고 싶을때 */
+            animation-fill-mode: forwards;
+            /*실행된 루트가 끝난후 다시 되돌아서 시작할때 */
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            /* 무한반복할때 */
+            /* animation-iteration-count: infinite; */
+        }
+        @keyframes ani{
+            0%{background: red;top: 0;left: 0;}
+            25%{background: orange;top: 0;left: 100px;}
+            50%{background: yellow;top: 200px;left: 200px;}
+            75%{background: green;top: 200px;left: 100px;}
+            100%{background: blue;top: 0;left: 0;}
+        }
+        
+    </style>
+
+    <div class="box">
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+    
+
+    <style>
+        .box{
+            position: relative;
+            height: 300px;
+            background: lightgray;
+            margin: 400px 0 200px;
+        }
+        .square{
+            position:absolute; top: 0;left: 0;
+            width: 100px;height: 200px;
+            background: hotpink;
+            opacity: 0;
+            animation-name: ani-s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ani-s {
+            0%{opacity: 0; top: 0;left: 0;}
+            100%{opacity: .7;top: 40%; left: 50%;}            
+        }
+        .circle{
+            position: absolute;bottom: 0;right: 0;
+            width: 100px;height: 100px;
+            background: lightblue;
+            opacity: 0;
+            border-radius: 50%;
+            animation-name: ani-c;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ani-c {
+            0%{opacity: 0;bottom: 0;right: 0;}
+            100%{opacity: .7;bottom: 40%;right: 45%;}
+        }
+        
+        
+
+    </style>
+</body> 
+</html>

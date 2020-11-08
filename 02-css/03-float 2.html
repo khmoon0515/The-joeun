@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float : css</title>
+    <style>
+        *{
+            margin: 0; padding: 0 ;
+            line-height: 1.5; font-size: 16px;
+            text-decoration: none;
+            list-style: none;
+            color: #000;
+            box-sizing: border-box;
+        }
+        .list-1 li{
+            float: left;
+            /* 높이는 px로만 입력하기 */
+            width: 30%; height: 100px;
+            margin-right: 5%;
+            margin-bottom: 20px;
+            background: lightgray;
+            border: 1px solid yellowgreen;
+        }       
+        .list-1 li:nth-child(3n){
+            margin-right: 0;
+        }
+
+    </style>
+    
+</head>
+<h1>float</h1>
+<body>
+    <h2>box정렬 type1</h2>
+    <ul class="list-1">
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+    </ul>
+
+    <style>
+         .list-2{
+             background: lightblue;
+         }
+        .list-2 li{
+            float: left;
+            width: 100px;height: 100px;            
+            border: 1px solid violet;
+            background: lightyellow;
+        }
+
+    </style>
+    <h2>box정렬 type2</h2>
+    <ul class="list-2">
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>
+        <li>sandbox</li>        
+    </ul>
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font : html </title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            list-style: none;
+            font-size: 14px; font-family: '나눔스퀘어', serif;
+            color: #222;
+            line-height: 1.5;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>font</h1>
+
+    <h2>단위 em</h2>
+    <style>
+        .txt1{
+            /* font-size: 14px; */
+            line-height: 1.5;
+            /* line-height는 폰트크기의 1.5배(가장 좋은 비율) */
+        }
+        .txt2{font-size: 2.85em; letter-spacing: -1px; }
+        .txt2 span{ display: block;  font-size: 0.45em;}
+        .txt3{font-size:2.14em;        }
+        .txt3 span{
+            /* rem:기준이 부모가 아니라 html이 기준이됨 */
+            display: block; font-size: 1.28rem;}
+
+        .txt4{font-size: 1.42em;        }
+        .txt5{font-size: 0.71em;        }
+
+    </style>
+    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium aliquid velit veritatis aperiam reprehenderit eveniet impedit, minima corrupti, sed totam eaque sequi tempore doloribus aut eum distinctio doloremque magni?</p>
+    <p class="txt2">더조은컴퓨터아카데미
+        <span>웹디자인(웹퍼블리싱)</span>
+    </p>
+    <p class="txt3">더조은컴퓨터아카데미
+        <span>웹디자인(웹퍼블리싱)</span>
+    </p>
+    <p class="txt4">더조은컴퓨터아카데미</p>
+    <p class="txt5">더조은컴퓨터아카데미</p>
+
+      <br><br>
+    <h2>단위 vw,vh</h2>
+    <!-- 뷰포트를 기준으로 -->
+
+    <style>
+        .box{
+            display: inline-block;
+            width: 100vw;
+            background: green;
+        }
+        .box2{            
+            height: 100vh;
+            background: rgb(177, 211, 177);
+        }
+    </style>
+    <div class="box">vw    </div>
+    <div class="box2">vh    </div>
+
+
+</body>
+</html>

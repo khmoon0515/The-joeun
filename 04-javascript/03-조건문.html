@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 : js</title>
+    <script>
+        // 기본 if문 
+        // if(조건){
+        //     참일 경우 실행될 명령문
+        // }else{
+        //   거짓일 경우 실행될 명령문
+        // }
+
+        let a = 2;
+        if (a + 1 === 2) {
+            console.log('a+1=2입니다')
+        } // 참일때만 실행되는 경우 
+
+        if (a + 1 === 2) {
+            consol2.log('a+1=2입니다')
+        } else {
+            console.log('a+1=2가 아닙니다')
+        } //참이아닐때도 출력을 원할 경우 
+
+        let b = 1
+        if (true) {
+            let b = 2
+            console.log('if문 안의 b값은' + b)
+        }
+        console.log('if문 밖의 b값은' + b)
+
+        //if -  else if
+        let c = 10
+        if (c === 5) {
+            console.log('5번 입니다.')
+        } else if (c === 10) {
+            console.log('10번입니다.')
+        } else {
+            console.log('5번도 10번도 아닙니다.')
+        }
+
+        //switch - case문
+
+        // let device = "아이폰XR"
+        // switch (변수) {
+        //     case "조건":
+        //         실행문
+        //         break
+        //     case '조건':
+        //         실행문
+        //         break
+
+        //     default:
+        //         실행문(두개의 조건도 아닐경우)
+        // }
+
+        let device = "iphon XR"
+
+        switch (device) {
+            case "iphon XR":
+                console.log('아이폰 XR')
+                break
+            case 'galaxy 10+':
+                console.log('갤럭시 10+')
+                break
+
+            default:
+                console.log('모르겠음')
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

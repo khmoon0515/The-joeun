@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* reset */
+/* 모든디자인 처음은 리셋 해야함 * 태그 마진0패딩0*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 1200px;
+    margin: auto;
+    background: lightgoldenrodyellow;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: pink;    
+}
+.nav-depth2{
+    flex-direction: column;
+    background: #fff;
+}
+.nav-depth1 li:first-child li::before{
+    display: inline-block;
+    content: '';
+    width: 5px;height: 5px;
+    background: red;
+    vertical-align: middle;
+    margin-top: -5px 10px 0 0;
+}
+/* 라인어썸 아이콘 우클릭>검사>해당 소스확인 후 클릭 해서 스타일에서 content를 사용후, 
+그 밑에 i주소 확인 > 폰트패밀리,폰트웨이트도 가져옴 */
+.nav-depth1 li:nth-child(2) li a::before{
+    content: "\f152";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+
+header h1{
+    display: flex;
+    align-items: center;
+}
+header h1 a{
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    /* width: 300px; */
+    display: flex;
+    justify-content: space-between;    
+}
+.slide{
+       /* height: 300px; */
+}
+.slide ul{
+    display: flex;
+    justify-content: space-between;
+    }
+.slide ul li{
+    width: 30%;
+    height: 300px;
+    background: hotpink;
+    font-family: 'Nanum Pen Script', cursive;
+    /* 정 가운데 정렬할 경우 */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container section{
+    width: 30%;
+    height: 200px;
+    background: purple;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #000;
+    /* 폰트색상변경 */
+    color: #fff;
+}
+footer h1{
+    width: 20%;
+    background: pink;
+    }
+footer .copyright{
+    width: 50%;
+    background: brown;
+}
+footer .sns{
+    width: 20%;
+    background: #444;
+}

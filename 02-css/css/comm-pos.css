@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+  /* 기본 reset */
+  * {
+    margin: 0; 
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #303030;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;        
+}
+   header{
+    position: fixed;top: 0;right: 0;left: 0;
+    z-index: 10px;
+    height: 70px;
+    background: #212121;
+ } 
+ header h1{
+   float: left;
+   width: 151px;height: 34px;
+   background: url(../images/다운로드.png) 0 0 no-repeat;
+   text-indent: -9999px;
+   margin-top: 15px;
+ }
+ header nav{
+   float: right;
+ }
+ header *{
+   color: #ffffff;
+ }
+ header ul li{      
+   float: left;
+   /* margin-left: 30px; */
+ }
+ header ul li a{
+   line-height: 70px;
+   display: block;       
+   padding: 0 15px;
+   height: 70px
+ }
+
+ .sec-video{
+   position: relative;
+   width: 800px;
+   margin: 100px auto 0;            
+ }
+ .iframe-video{
+   /* 블럭요소의 가운데정렬은 마진을 오토로설정 */
+   display: block;
+   margin: auto;
+ } 
+ /* 슬라이드 버튼 만들때 position사용, 기준이 되는 엄마에게 relative를 넣기 */
+ .video-arrow a{
+     position: absolute;top: 50%;
+     transform: translateY(-50%);
+     /* 포지션의 가운데 정렬 */
+     display: block;
+     padding-top: 25px;
+     width: 100px; height: 100px;
+     background: rgba(0, 0, 139, 0.658);
+     border-radius: 50%;    
+     text-align: center;         
+ }
+ .video-arrow .btn-btn-pre{
+     left: -50px;
+ }
+.video-arrow .btn-btn-next{
+     right: -50px;
+ }
+ .blind{
+     display: block;
+     text-indent: -9999px;
+     font-size: 0; line-height: 0;
+     width: 0;
+ }
+ .video-arrow i{
+     color: #ffffff;
+     font-size: 50px;
+          
+ }
+ .video-dot{
+     position: absolute;bottom: 20px;left: 50%;
+     transform: translateX(-50%);     
+     /* margin-left: -58px; */
+       /*가로사이즈의 절반을 -로 당김  */
+     text-align: center;
+ }
+ .video-dot a{     
+     display: inline-block;
+     width: 25px;height: 25px;
+     background: lavender;
+     border-radius: 50%;
+     text-indent: -9999px;
+     margin: 0 5px;
+ }
+ .video-desc{     
+     width: 800px;      
+     margin: 20px auto 0;    
+ }
+ .video-desc strong{
+     font-size: 24px;   
+ }
+ .video-desc .txt{
+     overflow-y: auto;
+     height: 150px;
+     padding: 20px;
+     margin-top: 20px;
+     border: 1px solid #000;
+ }

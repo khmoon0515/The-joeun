@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼:html</title>
+</head>
+
+<body>
+    <h1>form</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <!-- 단순링크는 a태그사용 -->
+            <a href="#">확인</a>
+            <!-- 정보를 서버로 보낼때 input태그 사용 -->
+            <input type="button" value="확인"> <br>
+            <hr>
+
+            <!-- checkbox 글씨를 클릭해도 호환이 가능하도록-->
+            <!-- 복수선택 -->
+            <input type="checkbox" id="photo"> <label for="photo">포토샵</label> 
+            <input type="checkbox" id="ilust"> <label for="ilust">일러스트</label> <br>
+              <!-- 라디오:단일선택 -->
+              <input type="radio" id="man"><label for="man">남</label> 
+              <input type="radio" id="female"><label for="female">여</label>            <br>
+              <hr>
+            <input type="color"><br>
+            <input type="date"><br>
+            <input type="datetime-local"><br>
+
+            <!-- 역할에 따라 모바일 자판이 변경됨 -->
+            <!-- placeholder는 예시 / value 실제 값 -->
+            <input type="email"><br>
+            <input type="file"><br>
+            <input type="hidden"><br>
+            <input type="image"><br>
+            <input type="month"><br>
+            <input type="number"><br>
+
+            <!-- 폰트를 굴림/돋움 등(일반폰트) 사용 -->
+            <input type="password"><br>          
+
+            <input type="range"><br>
+             <!-- 확인버튼 : 서버를 정보로 넘겨 -->
+             <input type="submit" value="확인"><br>
+            <!-- 취소 버튼 -->
+            <input type="reset" value="취소"><br>
+            <input type="search"><br>        
+               <!-- 폰번호 넣기 -->
+               <label for="phone">핸드폰 번호</label>
+               <select name="" id="phone">
+                   <option value="통신사 선택">통신사 선택</option>
+                   <option value="LG U+">LG U+</option>
+                   <option value="SKT">SKT</option>
+                   <option value="KT">KT</option>
+                   <option value="알뜰폰">알뜰폰</option>
+               </select>
+            <input type="tel" placeholder="2222" title="번호 가운데 4자리">
+            - <input type="tel" placeholder="3456" title="번호 끝 4자리"><br>
+
+            <input type="text" placeholder="아이디"><br>
+            <input type="time"><br>
+            <input type="url"><br>
+            <input type="week"><br>
+
+            <hr>
+            <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa deleniti recusandae pariatur commodi, amet quo labore quos ipsam, dignissimos tempora non exercitationem quas a sequi dicta, beatae eaque iure!
+             </textarea>
+             
+            
+
+        
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>

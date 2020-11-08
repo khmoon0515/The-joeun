@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background : css</title>
+    <!-- css에서 배경을 삽입할때 사용 -->
+</head>
+<body>
+    <h1>background</h1>
+    <h2>background-color</h2>
+
+    <div class="bg-c">background-color</div>
+    <div class="bg-c2">background-color</div>
+    <div class="bg-c3">background-color</div>
+    <style>
+        .bg-c{
+            background-color: tomato;
+        }
+        .bg-c2{
+             background-color: rgba(110,222,251,0.5);
+         }
+         /* 가장많이 사용하는 백그라운드 서식, alpa값을 넣으면 투명도 조절가능 */
+         .bg-c3{
+             background-color: #45b24d;
+         }
+    </style>    
+
+<h2>background-image</h2>
+<!-- 배너에 이미지를 삽입할때 -->
+<a href="#" class="banner">배너</a>
+<style>
+    .banner{
+        display: block;
+        width: 2020px;
+        height: 600px;
+        background-image: url(./images/banner.jpg);
+        /* 배너사이즈보다 크게 사이즈 변경할경우 배너가 반복되어 나오지 않게 */
+        background-repeat: no-repeat;
+        background-color: lightgray;
+        /* 오른쪽하단으로 이미지 이동 */
+        background-position: right bottom;
+        background-position: 100% 100%;
+        /* 오른쪽상단으로 이미지 이동  */
+        background-position: right top;
+            }        
+</style>
+
+<h2>이미지 스프라이트</h2>
+<div class="sp">
+   이미지 스프라이트</div>
+   <a href="#"class="naver">Naver</a>
+   <a href="#"class="live">live</a>
+
+<style>
+   .live{
+       display: block;
+       width: 102px; height: 44px;
+       /* 축약형으로 외워둘것 */
+       /* background: #000 url() 0 0 no-repeat; */
+       background: url(./images/naver\ main.png) -312px -534px no-repeat;
+       text-indent: -9999px;
+   }
+
+   .naver{  
+       display: block;
+       width: 443px; height: 103px;
+       background-image: url(./images/naver\ main.png);
+       background-repeat: no-repeat;
+       background-position: 0 -316px;
+       text-indent: -9999px;
+
+   }
+   .sp{
+       width: 312px; height: 312px;
+       /*  이미지 불러올때 사용 가장기본적임 */
+       background-image: url(./images/naver\ main.png);
+       background-repeat: no-repeat;
+       background-position: 0 0;
+       text-indent: -9999px;
+   }
+</style>
+
+<h2>background-attachment</h2>
+<div class="bg-att"></div>
+<style>
+   .bg-att{
+       width: 100%; 
+       height: 200px;
+       background: url(./images/지도.jpg) 0 0 no-repeat;
+       background-attachment: fixed;
+       background-size: 100% auto;
+   }
+</style>
+
+<h2>background-size</h2>
+<div class="bg-size"></div>    
+<style>
+   .bg-size{
+       width: 500px;height: 300px;
+       background: #45b24d url(./images/이미지.jpg) 50% no-repeat;
+       /* 배경이 잘려나가도 캔버스에 이미지를 꽉 채울때 */
+       background-size: cover;
+   }  
+</style>
+ <br>
+<div class="bg-size2"></div>    
+<br>
+<!-- 운영성 이미지(수시로바뀌는 이미지)가 아닌경우 모두 a태그로 사용 -->
+<a href="#" class="link-light">라이트 모드로 보기</a>
+<a href="#" class="link-light-m">라이트 모드로 보기</a>
+<style>
+    .link-light{
+        display: block;
+        width: 282px;
+        height: 90px;
+        background:  url(./images/btn.png) 0 0 no-repeat;
+        text-indent: -9999px;
+    }
+    .link-light-m{
+        /* 이미지가 잘리지 않고 배경의 사이즈에 맞추고싶은 경우 이미지 사이즈를 줄인 후 배경사이즈를 contain으로 정리*/
+        display: block;
+        width: 252px;
+        height: 60px;
+        background:  url(./images/btn.png) 0 0 no-repeat;
+        text-indent: -9999px;
+        background-size: contain;
+    }
+    .bg-size2{
+        width: 500px; height: 300px;
+        background: #45b24d url(./images/이미지.jpg) 0 0 no-repeat;
+        /* 영역 내 배경 이미지가 다 보이게 할 때 : 버튼 */
+        background-size: contain;
+    }
+</style>
+
+
+<br><br><br><br><br><br><br><br>
+
+</body>
+</html>

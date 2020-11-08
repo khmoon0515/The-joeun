@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 : html</title>
+</head>
+
+<body>
+    <h1>테이블</h1>
+    <!-- div태그 -->
+    <!-- th태그 : 테이블의 헤더로 테이블의 타이틀 부분 -->
+
+    <table border="1" width="100%">
+        <caption>테이블 설명</caption>
+        <colgroup>
+            <col style="width:50%">
+            <col span="2" style="width:25%">
+        </colgroup>
+
+        <!-- 행 -->
+        <thead>
+            <tr>
+                <!-- 열 -->
+                <th scope="col">과목</th>
+                <th scope="col">수지</th>
+                <th scope="col">선호</th>
+                <!-- 열 -->
+            </tr>
+        </thead>
+        <!-- 행 -->
+        <tbody>
+            <tr>
+                <td scope="row">국어</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+
+            <tr>
+                <td scope="row">수학</td>
+                <td>70</td>
+                <td>70</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>총점</td>
+            <td>150</td>
+            <td>140</td>
+
+        </tfoot>
+
+        <hr>
+    </table>
+    <table border="1" width="100%">
+        <!-- 행 -->
+        <thead>
+            <tr>
+                <!-- 열 -->
+                <th>과목</th>
+                <th colspan="2">수지</th>
+                <!-- 열 -->
+            </tr>
+        </thead>
+        <!-- 행 -->
+        <tbody>
+            <tr>
+                <td rowspan="2">국어</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+
+            <tr>
+                <td>70</td>
+                <td>70</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>총점</td>
+            <td>150</td>
+            <td>140</td>
+
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

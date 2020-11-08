@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float  : css</title>
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         font-family: 'Noto Sans KR', sans-serif;
+         color: #000;
+         text-decoration: none;
+         box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <style>
+        .clear-g::after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+        header{
+            background: lightpink;
+            width: 80%;margin: auto;
+            /* float해제 방법 : 높이값입력 또는 오버플로우 히든 또는 clear-g 사용 */
+            height: 100px;
+            overflow: hidden;
+        }
+        header h1{
+            float: left;
+            width: 100px;height: 100px;
+            background: red;            
+        }
+        nav{
+            float:right;
+            width: 100px;height: 100px;
+            background: blue;
+        }
+    </style>
+    <header>
+        <h1>로고</h1>
+        <nav>메뉴</nav>
+    </header>
+
+    <style>
+        .type2 nav{
+            float: left;
+        }
+    </style>
+    <header class="type2">
+        <h1>로고</h1>
+        <nav>메뉴2</nav>
+    </header>
+
+
+    <style>
+        .container section{
+            float: left;
+            
+        }
+    </style>
+    <div class="container clear-g">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+    </div>
+</body>
+</html>

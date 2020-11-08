@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display : css</title>
+</head>
+<body>
+    <h1>display</h1>
+
+    <h2>display : block, inline-block</h2>
+    <style>
+        ul li{
+            /* inline-block 가로정렬 하면 안됨 */
+            display: inline-block;
+            width: 200px; height: 100px;
+        }
+        ul li a{
+            display: block;
+            width: 100%;   /* block 요소는 자동으로 가로 100% */
+            height: 100%;  /* 높이값은 자동으로 늘어나지 않음 */
+            background: pink;
+            color: #ffffff;            
+        }
+    </style>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+
+    <hr>
+    <!-- 오브젝트를 없애는 용도 -->
+    <h2>display-none</h2>
+    <style>
+        .pop{
+            /* none: 없애기, block: 보이기 */
+            display: block;
+            width: 500px; height: 500px;
+            background: lightgray;
+        }
+    </style>
+    <div class="pop"> 팝업</div>
+    
+</body>
+</html>

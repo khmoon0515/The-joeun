@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃2 : html</title>
+    <!-- 인터널스타일 css  -->
+    <style>
+        .wrap{ 
+            width: 1200px;
+            margin: auto;
+            background: lightgray;
+        }
+        /* 헤더부분 디자인변경*/
+        #header{
+            display: flex;
+            justify-content: space-between;
+            background: tomato;
+        }
+        .slide ul {
+            display: flex;
+        }
+        .container {        
+            display: flex;
+        }
+        .container section{
+            width: 30.333%;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background: plum;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <h1>
+                <a href="#">JUST 쇼핑몰</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">MENU-1</a></li>
+                    <li><a href="#">MENU-2</a></li>
+                    <li><a href="#">MENU-3</a></li>
+                    <li><a href="#">MENU-4</a></li>
+                </ul>
+            </nav>               
+            
+        </header>
+        <div class="slide">  
+            <!-- 여러가지 이미지가 돌아가는 구조 -->
+            <ul>
+                <li>슬라이드-1</li>
+                <li>슬라이드-2</li>
+                <li>슬라이드-3</li>
+            </ul></div>
+        <div class="container">
+            <section>
+                <h2>공지사항</h2>
+                <div class="cont">내용</div>
+            </section>
+            <section>
+                <h2>배너</h2>
+                <div class="cont">내용</div>
+            </section>
+            <section>
+                <h2>바로가기</h2>
+                <div class="cont">내용</div>
+            </section>
+        </div>
+        <footer>
+            <h1>
+                <a href="#">JUST 쇼핑몰</a>
+            </h1>
+            <div class="copyright">copyright</div>
+            <div class="sns">sns</div>
+        </footer>
+    </div>
+</body>
+</html>

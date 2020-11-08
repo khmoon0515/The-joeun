@@ -1,0 +1,77 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* float는 오른쪽으로 흘러가는것이기때문에 바로옆에 붙어서 나열됨*/
+/* 띄워서 배치원할경우 margin값을 입력 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;     /* 블럭요소를 가운데 정렬 */
+    
+}
+header{
+    /* float 해제방법 1. 높이값 넣기 2.overflow:hidden으로 잡기 3.clear-g*/
+    height: 100px;
+    /* overflow: hidden; */
+    background: rgba(129, 185, 204, .5);
+}
+/* float는 엄마한테 넣으면 안됨, 자식한테 넣어야함 */
+header h1{
+    float: left;
+}
+header nav{
+    float: right;
+}
+.nav-depth1 li{
+    float: left;
+}
+.slide ul{
+    overflow: hidden;
+}
+.slide li{    
+    float: left;
+    width: 30%; height: 300px;
+    margin-right: 5%;
+    background: lightpink;
+}
+.slide li:last-child{
+    margin-right: 0;
+}
+/* float 해제 */
+.clear-g::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.container section {
+    float: left;
+    width: 30%;height: 300px;
+    margin-right: 5%;
+    background: rgba(144, 238, 144, 0.555);
+}
+.container section:last-child{
+    margin-right: 0;
+}
+footer{
+    background: lightgray;
+    
+}
+footer h1{
+    float: left;
+    width: 10%;
+}
+footer .copyright{
+    float: left;
+    width: 30%;
+    margin-left: 400px;
+}
+footer .sns{
+    float: right;
+    width: 20%;
+}

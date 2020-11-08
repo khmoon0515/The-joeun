@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position2 : css</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-family: 'Noto Sans KR', sans-serif;
+          color: #000;
+          font-size: 16px;
+          text-decoration: none;
+          box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>position2</h1>
+    <style>
+        .wrap{
+            position: relative;
+            /* wrap을 기준으로 박스를 나열함 */
+            height: 100vh;
+            background: lightgray;            
+        }
+        .box{   
+            position:absolute;top: 50%; left: 200px;
+            width: 100px;height: 100px;
+            background: yellow;
+        }
+        .box2{
+            position: absolute;bottom: 30px; right: 100px;
+            width: 300px;height: 100px;
+            background: red;
+        }
+        .box3{
+            position: absolute;top: 0;left: 0;
+            width: 100%;height: 100px;
+            background: green;
+        }
+        .box4{
+            /* 배너같은걸 고정할때 */
+            /* 배경 연하게 사용할때 */
+            /* fixed는 기준이 body */
+            position: fixed;top: 0;left: 0;right: 0;bottom: 0;
+            height: 50px;
+            background: lightsalmon;
+        }
+    </style>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+
+    <hr>
+    <h2>샘플</h2>
+    <style>
+        .sec-thumb{
+            overflow: hidden;
+            margin: auto;
+            width: 500px;
+        }
+        .list-thumb{
+            /* width: 520px;             */
+            overflow: hidden;
+            margin: 20px -10px;
+            background: red;
+        }
+        .list-thumb li{
+            position: relative;
+            float: left;
+            width: 33.333%;
+            padding: 0 10px; 
+        }
+        .list-thumb li:last-child{
+            /* margin-right: 0; */
+        }
+        .list-thumb a{
+            position: relative;
+            height: 246px;
+            display: block;
+        }
+        .list-thumb img{
+            position: absolute; top: 0;left: 0;
+            width: 100%;
+        }
+        .list-thumb p{
+            position: absolute;bottom: 0;right: 0;left: 0;
+            z-index: 10;
+            height: 80px;
+            padding: 20px 50px;
+            background: rgba(1, 1, 88, 0.5);
+            color: white;
+            text-align: center;     /* text 가로가운데 정렬 */
+            /* line-height: 100px;           */
+            /* text 세로가운데 정렬 */
+            transition: height .5s;
+        }
+        .sec-thumb{
+            position: relative;
+        }
+        .link-more{
+            position: absolute;top: 0;right: 0;
+        }
+        /* 마우스 오버했을때 글자영역을 크게 키우고 싶을때 */
+        .list-thumb a:hover p{
+            /* top: 0; */
+            height: 100%;
+            /* 글자를 가운데로 내릴때 */
+            padding-top: 100px;
+            background: rgba(9, 9, 68, 0.8);
+        }
+    </style>
+    <div class="sec-thumb">
+     <h3>셀프웨딩</h3>
+     <ul class="list-thumb">
+         <li><a href="#">
+             <p>셀프웨딩을 위해 준비한 것들</p>
+             <img src="./images/thumb1.jpeg" alt="핫토픽섬네일">
+            </a></li>
+            <li><a href="#">
+                <img src="./images/thumb2.jpeg" alt="핫토픽섬네일">
+                <p>셀프웨딩을 위해 준비한 것들</p>
+            </a></li>
+            <li><a href="#">
+                <img src="./images/thumb3.png" alt="핫토픽섬네일">
+                <p>셀프웨딩을 위해 준비한 것들</p>
+            </a>
+        </li>
+    </ul>
+    <a href="#"class="link-more">더보기</a>
+</div>
+</body>
+
+<br><br><br><br><br><br>
+
+</html>
