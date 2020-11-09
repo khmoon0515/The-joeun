@@ -1,0 +1,52 @@
+@charset"utf-8";
+
+// scss에서 css를 가지고 와서 css로 만들기
+@import url(./reset.css);
+
+.tab-header{
+    height: 70px;
+    background:url(../images/bg-noise.png) 0 0 repeat; 
+
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        line-height: 70px;           
+    }
+    .tab-title{
+        font-size: 30px;
+    }
+   .tab-nav{
+       display: flex;
+       justify-content: space-between;
+       li{
+           position: relative;
+           //li에 on이 붙었을때
+           &.on{
+               background: #333;
+               &::after{
+                   content: '';
+                   display: block;
+                   position: absolute;bottom: -19px;left: 50%; //포지션을 가운데정렬 하고 
+                   transform: translateX(-50%); // 포지션의 트랜스폼을 반만 당겨옴 
+                   width: 37px;height: 19px;
+                   background: url(../images/sprites.png);
+               }
+               a{
+                color: #fff; //폰트컬러는 피부같은존재라 해당되는 태그에 바로 넣어야함
+               }
+           }
+       }
+       a{
+           display: block;
+           height: 70px;
+           padding: 0 30px;
+           font-size: 20px;
+       }
+   }
+
+
+}
+

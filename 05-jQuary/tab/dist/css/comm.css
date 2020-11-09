@@ -1,0 +1,64 @@
+@import url(./reset.css);
+.tab-header {
+  height: 70px;
+  background: url(../images/bg-noise.png) 0 0 repeat;
+}
+
+.tab-header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.tab-header .tab-title {
+  font-size: 30px;
+}
+
+.tab-header .tab-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-header .tab-nav li {
+  position: relative;
+}
+
+.tab-header .tab-nav li.on {
+  background: #333;
+}
+
+.tab-header .tab-nav li.on::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 37px;
+  height: 19px;
+  background: url(../images/sprites.png);
+}
+
+.tab-header .tab-nav li.on a {
+  color: #fff;
+}
+
+.tab-header .tab-nav a {
+  display: block;
+  height: 70px;
+  padding: 0 30px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=comm.css.map */
