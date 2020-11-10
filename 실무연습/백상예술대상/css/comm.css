@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 
+*{
+    margin: 0;padding: 0;
+    font-size: 14px; color: #000; line-height: 1.5;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+}
+
+#wrap{    
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_containner{    
+    width: 1900px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    height: 370px;
+} */

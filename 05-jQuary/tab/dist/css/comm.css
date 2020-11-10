@@ -1,7 +1,11 @@
 @import url(./reset.css);
 .tab-header {
+  position: relative;
+  z-index: 100;
   height: 70px;
   background: url(../images/bg-noise.png) 0 0 repeat;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tab-header .inner {
@@ -17,7 +21,7 @@
   line-height: 70px;
 }
 
-.tab-header .tab-title {
+.tab-header .tab-tit {
   font-size: 30px;
 }
 
@@ -60,5 +64,60 @@
   height: 70px;
   padding: 0 30px;
   font-size: 20px;
+}
+
+.tab-panel {
+  display: none;
+  position: relative;
+}
+
+.tab-panel.on {
+  display: block;
+}
+
+.tab-panel .imgs {
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-panel .imgs::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.tab-panel .imgs img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
+}
+
+.tab-panel .txt {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 400px;
+  color: #fff;
+}
+
+.tab-panel .txt .link-more {
+  display: inline-block;
+  padding: 5px 20px 5px;
+  margin-top: 18px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.tab-panel .txt h3 {
+  font-size: 30px;
 }
 /*# sourceMappingURL=comm.css.map */
