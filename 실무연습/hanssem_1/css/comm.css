@@ -40,7 +40,7 @@ header h1 a{
 header .gnb_bar{
     width: 1200px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 65px;
 }
 .gnb_bar .lst-1{
     display: flex;
@@ -51,8 +51,32 @@ header .gnb_bar{
     padding: 51px;
 }
 
-.inner{
+.containner-1{
     width: 1200px;
+    margin: 0 auto;  
+}
+.containner-1 .cont-txt{
     display: flex;
     justify-content: center;
+}
+
+.cont-txt {
+
+}
+
+.containner-1 li{
+    display: inline;   
+}
+
+.containner-1 li:first-child{
+    margin-left: 200px;
+    margin-right: 34px;
+}
+.middle_slide{
+    padding: 80px 0;
+}
+.middle_slide img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
 }
