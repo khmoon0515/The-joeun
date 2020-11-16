@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url('./reset.css');
+@import 'variables';
+@import 'mixin';
+
+// body {
+//   background: url(../../pc.png) 50% 0 no-repeat;
+//   background-size: 100% auto;
+// }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 42px 0 50px;
+  background: #326DD1 url(../../images/bg-dot.png) 0 0 no-repeat;
+  background-size: cover;
+  // opacity: .5;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    margin-top: 4px;
+    font-size: 2.625em;
+  }
+}
+
+.img-waterdrop {
+  width: 70%;
+  /* min-width: 272px; */
+  height: 306px;
+  margin: auto;
+  background: url(../../images/img-waterdrop.png) 50% 0 no-repeat;
+  background-size: contain;
+
+  /* 2배 이미지 분기대응 */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    .img-waterdrop {
+      background-image: url(../../images/img-waterdrop@2x.png);
+      -webkit-background-size: 192px 170px;
+      background-size: 192px 170px
+    }
+  }
+
+  /* 3배 이미지 분기대응 */
+  @media only screen and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (min-device-pixel-ratio: 3) {
+    .img_g {
+      background-image: url(https://m1.daumcdn.net/svc/image/U03/common_icon/527B1A640358520001);
+      -webkit-background-size: 192px 170px;
+      background-size: 192px 170px
+    }
+  }
+}
+
+footer {
+  width: 87px;
+  height: 34px;
+  margin-top: auto;
+  background: url(../../images/logo-me.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
