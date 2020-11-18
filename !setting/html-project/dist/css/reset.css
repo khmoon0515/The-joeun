@@ -24,14 +24,11 @@ input[type=password] {font-family: 'Malgun Gothic';}
 
 .f_l {float:left}
 .f_r {float:right}
-.col_left {float: left;}
-.col_right {float: right;}
-.cl_b {width:0;height:0;font-size:0;line-height:0;clear:both}
 .show {display:block}
 .hide {display:none}
 .tbl {border-collapse:collapse;border-spacing:0} /* 테이블 초기화 */
-.container_w, .clear_g {display:block;overflow:visible;width:auto;clear:both;*zoom:1}
-.container_w:after, .clear_g:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+.clear_g {display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.clear_g:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
 
 /* skipnavigation */
 #skipnavigation a {position: absolute;left: -3000%;}
