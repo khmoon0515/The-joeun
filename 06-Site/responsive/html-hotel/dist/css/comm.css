@@ -281,6 +281,9 @@ article:nth-child(12) {
     width: 100%;
     padding: 5px 20px 5px 10px;
   }
+  header .sns {
+    display: none;
+  }
   header h1 a {
     width: 200px;
     height: 80px;
@@ -434,11 +437,8 @@ article:nth-child(12) {
 
 @media screen and (max-width: 680px) {
   header {
+    display: block;
     padding: 10px 0 10px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   header h1 {
     border-bottom: 1px solid #eee;
@@ -457,6 +457,61 @@ article:nth-child(12) {
   }
   article:nth-child(2) {
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    z-index: 10;
+    bottom: auto;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 80%;
+    background: transparent;
+  }
+  header h1 {
+    border-bottom: none;
+  }
+  header h1 a {
+    width: 200px;
+    height: 120px;
+    background: url(../../images-하와이/si_logo_L.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  header #gnb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 25px auto 0;
+  }
+  header #gnb li {
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  header #gnb li a {
+    display: block;
+    padding: 20px 0 15px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  article:first-child {
+    height: 100vh;
+  }
+  article:first-child h2 {
+    display: none;
+  }
+  article:nth-child(n+2) {
+    display: none;
   }
 }
 /*# sourceMappingURL=comm.css.map */

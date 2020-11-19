@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 반응형 페이지 뷰포트 설정 -->
   <meta name="apple-mobile-web-app-title" content="벽초지수목원" />
-  <title>한진그룹</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="format-detection" content="telephone=no">
@@ -14,13 +15,23 @@
   <meta property="og:url" content="http://www..co.kr">
   <meta property="og:title" content="한진칼">
   <meta property="og:description" content="한진칼">
-  <link rel="stylesheet" href="./dist/vendor/line-awesome/css/line-awesome.css"/> <!-- 이미지 아이콘 -->
-  <link rel="stylesheet" href="./dist/vendor/slick/slick.css" />  <!-- 이미지 슬라이드 -->
-  <link rel="stylesheet" href="./dist/vendor/slick/slick-theme.css" />  <!-- 이미지 슬라이드 테마 -->
-  <link rel="stylesheet" type="text/css" href="./dist/css/comm.css">   <!-- my css -->
+
+  <link rel="stylesheet" href="./dist/vendor/line-awesome/css/line-awesome.css" /> <!-- 이미지 아이콘 -->
+  <link rel="stylesheet" href="./dist/css/reset.css">
+  <title>한진그룹</title>
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1 (1)/slick-1.8.1/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1 (1)/slick-1.8.1/css/slick-theme.css"/>
+  <script src="./dist/js/comm.js"></script> <!-- my js -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1 (1)/slick-1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./dist/css/comm.css"> <!-- my css -->
+  
+
 </head>
+
 <body>
-<div id="skipnavigation">
+  <div id="skipnavigation">
     <a href="#gnb"><span>주메뉴 바로가기</span></a>
     <a href="#main"><span>본문 바로가기</span></a>
     <a href="#login"><span>로그인 바로가기</span></a>
@@ -30,91 +41,144 @@
     <header>
       <div class="inner_header">
         <h1>
-          <a href="#"><img src="./img/hj_logo.png" alt=""> 한진 그룹</a>
+          <a href="#">한진 그룹</a>
         </h1>
-        <span>전체메뉴│ English</span>
         <nav>
-          <ul>
-            <li>
-              <a href="#">한진그룹</a>
-              <ul>
-                <li><a href="#">하나-1</a></li>
-                <li><a href="#">하나-2</a></li>
-                <li><a href="#">하나-3</a></li>
-                <li><a href="#">하나-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">한진칼</a>
-              <ul>
-                <li><a href="#">둘-1</a></li>
-                <li><a href="#">둘-2</a></li>
-                <li><a href="#">둘-3</a></li>
-                <li><a href="#">둘-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">사회공헌</a>
-              <ul>
-                <li><a href="#">셋셋셋-1</a></li>
-                <li><a href="#">셋셋셋-2</a></li>
-                <li><a href="#">셋셋셋-3</a></li>
-                <li><a href="#">셋셋셋-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">홍보센터</a>
-              <ul>
-                <li><a href="#">넷넷넷-1</a></li>
-                <li><a href="#">넷넷넷-2</a></li>
-                <li><a href="#">넷넷넷-3</a></li>
-                <li><a href="#">넷넷넷-4</a></li>
-                <li><a href="#">넷넷넷-5</a></li>
-                <li><a href="#">넷넷넷-6</a></li>
-                <li><a href="#">넷넷넷-7</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">한진인</a>
-              <ul>
-                <li><a href="#">다섯-1</a></li>
-                <li><a href="#">다섯-2</a></li>
-              </ul>
-            </li>
+          <ul class="nav-depth1">
+              <li><a href="#">한진그룹</a>
+                  <ul class="nav-depth2">
+                      <li><a href="#">인사말씀</a></li>
+                      <li><a href="#">한진70년</a></li>
+                      <li><a href="#">한진의 미래</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">한진칼</a>
+                  <ul class="nav-depth2">
+                      <li><a href="#">기업개요</a></li>
+                      <li><a href="#">연혁</a></li>
+                      <li><a href="#">오시는길</a></li>
+                      <li><a href="#">투자자정보</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">사회공헌</a>
+                  <ul class="nav-depth2">
+                      <li><a href="#">나눔경영</a></li>
+                      <li><a href="#">육영사업</a></li>
+                      <li><a href="#">의료복지</a></li>
+                      <li><a href="#">활동소식</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">홍보센터</a>
+                  <ul class="nav-depth2">
+                      <li><a href="#">그룹사 소식</a></li>
+                      <li><a href="#">광고모음</a></li>
+                      <li><a href="#">정기간행물</a></li>
+                      <li><a href="#">CI</a></li>
+                      <li><a href="#">글로벌 네트워크</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">한진인</a>
+                  <ul class="nav-depth2">
+                      <li><a href="#">한진의 인재상</a></li>
+                      <li><a href="#">인재육성</a></li>
+                      <li><a href="#">인사제도</a></li>
+                      <li><a href="#">복리후생</a></li>
+                      <li><a href="#">채용정보</a></li>
+                  </ul>
+              </li>
           </ul>
-        </nav>
+      </nav>
       </div>
     </header>
     <!-- //header -->
     <!-- container -->
+    <div class="slide">
+      <ul>
+        <li><a href="#"><img src="./img/slide1.png" alt="사람과 사람을 잇다"></a></li>
+        <li><a href="#"><img src="./img/slide2.png" alt="사람과 사람을 잇다"></a></li>
+        <li><a href="#"><img src="./img/slide3.png" alt="사람과 사람을 잇다"></a></li>
+      </ul>
+    </div>
     <div class="container">
-        <img src="" alt="">
-      <div class="contents">
-        <div class="sec_g sec_">
-          <h2>타이틀</h2>
-          <div class="cont_g">
 
-          </div>
-        </div>
+      <div class="banner">
+        <ul>
+          <li><a href="#"><img src="./img/banner1.jpg" alt="한진네트워크"></a></li>
+          <li><a href="#"><img src="./img/banner2.jpg" alt="한진그룹sns"></a></li>
+          <li><a href="#"><img src="./img/banner3.jpg" alt="창업회장관"></a></li>
+          <li><a href="#"><img src="./img/banner4.jpg" alt="그룹역사관"></a></li>
+        </ul>
       </div>
-      <aside></aside>
+
+      <div class="contents">
+        <section>
+          <h2>그룹사 소식</h2>
+          <div class="cont">
+            <ul>
+              <li><a href="#">
+                  <p>한진그룹, <br>아시아나항공 인수결의</p>
+                </a></li>
+              <li><a href="#"><img src="./img/getImage.png" alt=""></a></li>
+            </ul>
+            <ul>
+              <li><a href="#">- [대한항공]대한항공, 국토부 '2019 항공교통서비스평가'서 전 항목 …</a></li>
+              <li><a href="#">- [(주)한진]한진, 함안수박 CSV활동으로 홍콩 DFA 어워더 '우수상' …</a></li>
+              <li><a href="#">- [(주)한진]한진, 인천공항 복합물류센터 'GDC'개장</a></li>
+              <li><a href="#">- [대한항공] 대한항공, 한국 기업지배구조원 ESG평가 '통합등급A'획득</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2><a href="#">사회공헌</a> </h2>
+          <div class="cont">
+            <ul>
+              <li>
+                <p>작은 실천을 큰 사랑으로<br> 더 따듯하고 아름다운 세상을 꿈 꿉니다.</p>
+              </li>
+              <li><a href="#">이달의 사회공헌 일정 icon</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>sns 바로가기</h2>
+          <div class="cont">
+            <a href="#">트위터</a>
+            <a href="#">유튜브</a>
+            <a href="#">페이스북</a>
+          </div>
+        </section>
+      </div>
+
     </div>
     <!-- //container -->
     <!-- footer -->
     <footer>
-      <h1><a href="#">회사로고</a></h1>
       <div class="col_right">
-        <address></address>
-        <div class="copyright"></div>
+        <div class="last">
+          <ul class="lst3">
+            <li><a href="#">법적고지</a></li>
+            <li><a href="#">이메일주소무단수집거부</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+
+        <address>서울특별시 중구 소공로 88 Tel. 02-726-6166</address>
+        <div class="copyright">
+          COPYRIGHT HANJIN KAL. All Rights Reserved.
+        </div>
       </div>
+      <div class="another">
+        <a href="#">계열사 바로가기</a>
+      </div>
+
+
     </footer>
     <!-- //footer -->
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- 필수 jQuery -->
-  <script src="./dist/vendor/bootstrap/bootstrap.min.js"></script> <!-- 부트스트랩 -->
-  <script src="./dist/vendor/slick/slick.min.js"></script> <!-- 이미지 슬라이드 -->
-  <script src="./dist/vendor/jquery.scrollUp.min.js"></script> <!-- scroll top -->
-  <script src="./dist/js/comm.js"></script> <!-- my js -->
+
   <!-- ie9 이하 버전에서 잘 보이도록 추가 -->
   <!--[if lt IE 9]>
   	<script src="./dist/js/module/html5.js"></script>

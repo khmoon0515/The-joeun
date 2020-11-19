@@ -94,7 +94,7 @@ input[type=password] {font-family: 'Malgun Gothic';}
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  padding: 0px;
 }
 
 .col-1 {width: 8.33%;}

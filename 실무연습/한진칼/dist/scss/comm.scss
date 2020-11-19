@@ -8,11 +8,114 @@
 // 건너뛰기
 #skipnavigation {
   a {
-    position:absolute; left:-3000%;
-    &:focus { display:block; left:0; top:0; z-index:10000000000; width:100%; height:30px; line-height:30px; background:$cerulean; color:#fff; text-align:center;}
+    position: absolute;
+    left: -3000%;
+
+    &:focus {
+      display: block;
+      left: 0;
+      top: 0;
+      z-index: 10000000000;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      background: $cerulean;
+      color: #fff;
+      text-align: center;
+    }
   }
 }
 
-header{
-  
+.wrap {
+  // background: url(../../img/pcbg.png) 50% 0 no-repeat;
+  // background-size: 1920px auto;
+  /* width: 100%; */
+  width: 1920px;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+header {
+  width: 1180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 35px;
+  height: 150px;
+
+  .inner_header {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      a {
+        display: block;
+        width: 230px;
+        height: 25px;
+        background: url(../../img/hj_logo.jpg)0 0 no-repeat;
+        text-indent: -9999px;
+        margin: 28px 0;
+      }
+    }
+  }
+
+  .nav-depth1 {
+    display: flex;
+
+    >li:hover>a {
+      color: #5687C1;
+    }
+
+    >li:hover .nav-depth2 {
+      max-height: 150px;
+    }
+
+    >li {
+      >a {
+        height: 50px;
+        display: block;
+        padding: 30px 45px 0;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .nav-depth2 {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+    li{
+      a:hover{
+        background: #5687C1;
+        color: #fff;
+    }
+      a {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+        // font-size: 12px;
+      }
+    }
+
+  }
+}
+
+.slide{
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+  ul {
+    display: flex;
+    position: absolute;top: 0;left: 0;
+}
+}
+
+.container .banner{  
+  >ul>li{
+    display: inline;    
+  }
 }
